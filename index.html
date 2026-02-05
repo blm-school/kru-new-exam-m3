@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบสอบออนไลน์</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <iframe
+        src="">กำลังโหลดข้อสอบ...</iframe>
+
+    <div id="lock-overlay">
+        <div class="warning-box">
+            <h1>⚠️ ระงับการทำข้อสอบ</h1>
+            <p>พบการสลับหน้าจอหรือออกจากแอปพลิเคชัน</p>
+            <div class="count-text">ออกจากหน้าสอบไปแล้ว: <span id="display-count"
+                    style="font-weight:bold; color:red;">0</span> ครั้ง</div>
+            <p>กรุณาเรียกครูผู้คุมสอบมาปลดล็อกเพื่อทำข้อสอบต่อ</p>
+            <button onclick="unlockScreen()">ใส่รหัสผ่านครู</button>
+        </div>
+    </div>
+    <div class="text-center">
+        <button onclick="resetExamStatus()">เริ่มการสอบ</button>
+        <button onclick="resetExamStatus()">จบการสอบ</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

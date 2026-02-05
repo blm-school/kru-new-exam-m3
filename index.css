@@ -1,0 +1,37 @@
+body { font-family: sans-serif; margin: 0; padding: 0; }
+        
+        /* สไตล์ของ Google Forms Iframe */
+        iframe { width: 100%; height: 90vh; border: none; }
+
+        /* หน้าจอ Overlay ตอนโดนล็อก */
+        #lock-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            z-index: 9999;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .warning-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+
+        h1 { color: #d32f2f; }
+        .count-text { font-size: 24px; color: #333; margin: 20px 0; }
+        button { 
+            padding: 12px 25px; font-size: 18px; 
+            background: #1976d2; color: white; border: none; 
+            border-radius: 5px; cursor: pointer; 
+            margin: 10px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
